@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="expense_seer_root_menu" name="ExPenSeer" sequence="10"/>
+    <menuitem id="expense_seer_claims_menu" name="Expense Claims" parent="expense_seer_root_menu" sequence="10"/>
+    <menuitem id="expense_seer_approval_menu" name="Approvals" parent="expense_seer_root_menu" sequence="20"/>
+
+    <record id="action_expense_seer_claim" model="ir.actions.act_window">
+        <field name="name">Expense Claims</field>
+        <field name="res_model">expense.seer.claim</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <menuitem id="expense_seer_claims_action_menu" name="Claims" parent="expense_seer_claims_menu" action="action_expense_seer_claim"/>
+</odoo>
