@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_expense_seer_claim_user,expense.seer.claim user,model_expense_seer_claim,expense_seer.group_expense_seer_employee,1,0,1,0
+access_expense_seer_claim_manager,expense.seer.claim manager,model_expense_seer_claim,expense_seer.group_expense_seer_manager,1,1,1,0
+access_expense_seer_claim_admin,expense.seer.claim admin,model_expense_seer_claim,expense_seer.group_expense_seer_admin,1,1,1,1
